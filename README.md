@@ -1,27 +1,24 @@
-# HomeManagementFront
+# Home management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+## Description
+- Une application pour gérer son quotidien.
+- Plusieurs modules pour la gestion de son quotien.
 
-## Development server
+## Modules
+- Gestionnaire de tâches
+- Gestionnaire de calendrier
+- Gestionnaire de comptes bancaires
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+D'autres modules ajoutés au fur et à mesure du développement de l'application.
 
-## Code scaffolding
+## Architecture technique
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Front
+- Angular 7
+- MDBootstrap avec Angular Pro
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Back
+- Symfony 4.*
+- PHP 7.3
+- Nginx
+- Reverse proxy avec Varnish
