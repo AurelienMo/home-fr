@@ -2,9 +2,10 @@
   <div class="header_container_top white-text">
     <div class="header_container_top-content d-flex flex-row justify-content-around align-items-center">
       <div class="text-center">
-        <mdb-icon far icon="envelope" size="lg"></mdb-icon>
+          <mdb-icon far icon="envelope" size="lg" routerLink="/contact">
+          </mdb-icon>
       </div>
-      <div class="header_container_top-content-title text-center font-weight-bold">
+      <div class="header_container_top-content-title text-center font-weight-bold text-uppercase">
         Home Management
       </div>
       <div class="text-center">
@@ -15,3 +16,4 @@
   <div class="header_container_bottom">
   </div>
 </div>
+<router-outlet></router-outlet>

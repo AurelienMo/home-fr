@@ -1,0 +1,31 @@
+<div class="contact animated fadeInLeft">
+  <div class="contact_container">
+    <h1 class="contact_container-title h4 m-2 text-center text-uppercase">Contact</h1>
+    <form [formGroup]="contactForm" (submit)="onSubmit()" class="pl-3 pr-3">
+      <div class="md-form">
+        <input type="text" id="contactFormFirstname" class="form-control form-control-sm" mdbInput formControlName="firstname"/>
+        <label for="contactFormFirstname" class="text-white">Votre prénom</label>
+      </div>
+      <div class="md-form">
+        <input type="text" id="lastname" class="form-control form-control-sm" mdbInput formControlName="lastname"/>
+        <label for="lastname" class="text-white">Votre nom</label>
+      </div>
+      <div class="md-form">
+        <input type="email" id="contactFormEmail" class="form-control form-control-sm" mdbInput formControlName="email"/>
+        <label for="contactFormEmail" class="text-white">Votre email</label>
+      </div>
+      <div class="md-form">
+        <mdb-select [options]="subjectContact" id="contactFormSubject" formControlName="subject" class="white-text"></mdb-select>
+        <label for="contactFormSubject" class="text-white">Nature de votre demande</label>
+      </div>
+      <div class="md-form">
+        <textarea type="text" id="message" class="md-textarea form-control form-control-sm" mdbInput formControlName="message" rows="4"></textarea>
+        <label for="message" class="text-white">Votre message</label>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button mdbBtn block="true" class="p-2 pl-5 pr-5 my-4 waves-effect" mdbWavesEffect
+                type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
