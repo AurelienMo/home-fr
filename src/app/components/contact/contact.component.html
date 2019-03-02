@@ -24,7 +24,7 @@
       </div>
       <div class="d-flex justify-content-end">
         <button mdbBtn block="true" class="p-2 pl-5 pr-5 my-4 waves-effect" mdbWavesEffect
-                type="submit">Send</button>
+                type="submit" [disabled]="contactForm.invalid">Send</button>
       </div>
     </form>
   </div>

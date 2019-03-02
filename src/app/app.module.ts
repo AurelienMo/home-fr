@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {
     ButtonsModule,
     WavesModule, CollapseModule,
-    InputsModule, SelectModule, IconsModule, MDBBootstrapModulePro, MDBSpinningPreloader
+    InputsModule, SelectModule, IconsModule, MDBBootstrapModulePro, MDBSpinningPreloader, ToastModule
 } from 'ng-uikit-pro-standard';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -41,6 +41,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         NgxCaptchaModule,
         InputsModule,
         SelectModule,
+        ToastModule.forRoot(),
     ],
     providers: [
         MDBSpinningPreloader,
